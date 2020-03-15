@@ -503,7 +503,7 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <h1 id="关于PLSQL中scott存储过程增删改语句没有权限的问题"><a href="#关于PLSQL中scott存储过程增删改语句没有权限的问题" class="headerlink" title="关于PLSQL中scott存储过程增删改语句没有权限的问题"></a>关于PLSQL中scott存储过程增删改语句没有权限的问题</h1><p>之前遇到一个问题，用scott写存储过程时里面的修改语句提示没有权限。在网上找的方法是在AS前面加上Authid Current_User。试用之后依然没有权限。</p>
+      <p>之前遇到一个问题，用scott写存储过程时里面的修改语句提示没有权限。在网上找的方法是在AS前面加上Authid Current_User。试用之后依然没有权限。</p>
 <p> 解决办法是运行这句话：GRANT  all privileges   TO system;（授予系统所有权限）</p>
 <p>解决。</p>
 
